@@ -12,10 +12,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'turbolinks'
 gem 'pry'
-gem 'spring', '1.3.1'       #group: :development
+gem 'spring', '~>1.3.1'       #group: :development
 
 group :development, :test do
 gem 'byebug'
 gem 'web-console', '~> 2.0'
+#gem 'bcrypt-ruby', '~> 3.1.5', require: "bcrypt"
+gem 'bcrypt', '~> 3.1.7'
 end
 

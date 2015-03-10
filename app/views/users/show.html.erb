@@ -1,6 +1,11 @@
-<p><span>Id: </span><%=@user.id %></p>
+<script>
+glg.js
+</script>
+
+<p><span>Id: </span><%=@user%></p>
 <p><span>Name: </span><%=@user.name %></p>
-<p><span>Email: </span><%=@user.email %></p>
+<p><span>Email: </span><%=@user.email%></p>
 
 
-<%= link_to "Edit User", edit_user_path(@user) %>
+<%= link_to "Edit User", action: :edit %>
+

@@ -1,6 +1,11 @@
 
 <h1>Create a new user</h1>
-
+<body>
+  <div id = "header">
+    <p class = "header">
+<script>
+glg.js
+</script>
 <%= form_for User.new do |f| %>
 <%= f.label :name %>
 <%= f.text_field :name %>
@@ -8,5 +13,12 @@
 <%= f.text_field :email %>
 <%= f.label :password %>
 <%= f.password_field :password %>
+</p>
+<br>
+<div id = "section">
+<p class = "section">
 <%= f.submit "sign-up"%>
 <% end %>
+</div>
+</p>
+</body>

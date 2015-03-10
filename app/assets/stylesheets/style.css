@@ -1,0 +1,33 @@
+
+#nav button {
+  background-color:#4d4db8;
+  height:100px;
+  width:100px;
+  float:left;
+  color:#e0e0d1;
+}
+#header {
+  background-color:#3333ad;
+  color:white;
+  font-size:30px;
+  font-family:helvetica;
+  text-align:center;
+  padding:5px;
+
+#section {
+  width:900px;
+  float:left;
+  padding:10px;
+  font-family:helvetica;
+  font-size:20px;
+  color:#d1d1c2;
+  height:195px;
+  text-align:left;
+  margin:5px;
+}
+
+body{
+  background-color:gray;
+  color:white;
+  font-family: "helvetica";
+}
