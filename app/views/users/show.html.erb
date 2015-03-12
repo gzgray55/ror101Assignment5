@@ -2,10 +2,12 @@
 glg.js
 </script>
 
-<p><span>Id: </span><%=@user%></p>
+<p><span>Id: </span><%=@user.id%></p>
 <p><span>Name: </span><%=@user.name %></p>
 <p><span>Email: </span><%=@user.email%></p>
 
 
 <%= link_to "Edit User", action: :edit %>
+<br>
+<%= link_to "Delete User", action: :destroy %>
 

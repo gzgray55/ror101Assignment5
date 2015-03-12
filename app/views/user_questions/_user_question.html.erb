@@ -1,0 +1,5 @@
+<%= form_for current_user.answers.build do |f| %>
+  <p><%= user_question.question.text %></p>
+  <%= f.collection_select :choice_id, user_question.question.choices, :id, :text, prompt: true %>
+  <%= f.submit %>
+<%- end %>

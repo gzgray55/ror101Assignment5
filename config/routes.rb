@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :users
+  resources :posts
   get "/log-in" => "sessions#new"
   post "/log-in" => "sessions#create"
   get "/log-out" => "sessions#destroy", as: :log_out
+
+  resources :user_questions
+  resources :answers
+
+  root to: "answers#index"
+
   #resources :posts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

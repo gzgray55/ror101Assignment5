@@ -34,7 +34,8 @@ def update
     end
   end
   
-  def show
+def show
+    #@user = User.find(user_params)
     @user = User.find_by_id(params[:id])
 end
   
@@ -42,16 +43,16 @@ end
   #   @user = User.new
   # end
   
-  def create
-    @user = User.new(user_params)
-    if @user.save
+def create
+  @user = User.new(user_params)
+  if @user.save
       flash[:notice] = "user was created successfully!"
       redirect_to users_path
-    else
+  else
       flash[:alert] = "user was was not created"
       redirect_to users_path
-    end
   end
+end
 
 def destroy
   @user = User.find_by_id(params[:id])
@@ -66,7 +67,7 @@ private
 
 def user_params
  #params.require(:user).permit(:email, :name)    
- params.require(:user).permit(:name, :email, :password, :password_confirmation)
+ params.require(:user).permit(:id, :name, :email, :password, :password_confirmation)
  end
 end
 
